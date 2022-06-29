@@ -52,8 +52,25 @@ nav {
 }
 .titles {
   margin-left: 1.5rem;
-  width: 80vw;
+  width: 60vw;
+  height: 37.5rem;
   font-family: system-ui;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    margin: -80vw;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    margin: 0;
+    display: block;
+  }
+}
+.animation-title {
+  animation-name: fadeIn;
+  animation-duration: 4s;
 }
 .titles h1 {
   font-size: 5rem;
@@ -131,7 +148,10 @@ nav {
   font-size: 4rem;
   padding: 2rem 2rem 2rem 0;
 }
-
+.about-us span {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
 .line-about-us {
   border-bottom: 2px gray;
 }
