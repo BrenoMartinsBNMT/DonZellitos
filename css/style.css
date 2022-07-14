@@ -1,188 +1,535 @@
-* {
-  box-sizing: border-box;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: #00624b;
-}
 
-.logo-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.logo-content img {
-  height: 5.25rem;
-}
-.text-logo {
-  font-family: "Satisfy";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 35px;
 
-  color: #fbba05;
-}
-.menu-content {
-  margin-right: 1.25rem;
-  font-family: "Margarine";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+@media only screen and (max-width: 600px) {
 
-  color: #fbba05;
-}
-
-.menu-content span {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-}
-.menu-content span:hover {
-  background-color: #e62e37;
-}
-.first-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f4e9ce;
-}
-.titles {
-  margin-left: 1.5rem;
-  width: 60vw;
-  height: 37.5rem;
-  font-family: system-ui;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    position: relative;
-    right:100%;
-    display:none;
+  * {
+    box-sizing: border-box;
   }
-  to {
-    opacity: 1;
-    position: relative; 
-    right: 0;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #00624b;
+  }
+  
+  .logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo-content img {
+    height: 5.25rem;
+  }
+  .text-logo {
+    font-family: "Satisfy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #fbba05;
+  }
+
+  .first-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4e9ce;
+  }
+  .titles {
+    margin-left: 1.5rem;
+    width: 80vw;
+    height: 47rem;
+  }
+
+  .titles h1 {
+    font-family: 'Cabin Sketch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    margin-right: 1.4;
+    margin-top: 40;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  
+  .titles h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: 'Cabin Sketch';
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  .titles button {
+    outline: none;
+    border: none;
+    width: 17rem;
+    height: 5rem;
+    background-color: #e62e37;
+    font-family: 'Cabin Sketch';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    position: absolute;
+    background: #E62E37;
+    border-radius: 85px;
+  }
+
+  .titles button span {
+    display: none;
+  }
+ 
+  .second-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #00624B;
+    font-family: 'Cabin Sketch';
+    padding-top: 1px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .second-content h1 {
+    font-size: 24px;
+    padding: 2.5rem;
+    font-weight: normal;
+  }
+  
+  .products-view {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .products-view h3 {
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    padding-top: 1px;
+    font-weight: normal;
+  }
+  
+  .products-options {
+    padding: 20px;
+    font-size: 15px;
+    font-weight: normal;
+
+  }
+
+  .icon-entradas {
+  position: relative;
+  width: 74px;
+  height: 68px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-massas {
+  position: relative;
+  width: 74px;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+
+}
+
+.icon-bebidas {
+  position: relative;
+  width: 74px;
+  height: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+  .logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo-content img {
+    height: 55px;
+
+  }
+  .text-logo {
+    font-family: "Satisfy";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.25rem;
+    line-height: 35px;
+
+    color: #fbba05;
+    padding-left: 30px;
+    padding-top: 4px;
+  }
+
+  .menu-content {
+    display: none;
+  }
+
+  .first-content img {
+    display: none; 
+  }
+
+  .animation-title img {
+    padding-top: 20px;
     display: block;
+    width: 347px;
+    height: 347px;
+    left: -50px;
+    position: relative;
+    background: #E62E37;
+    border-radius: 50%;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.5));
+    
   }
-}
-.animation-title {
-  animation-name: fadeIn;
-  animation-duration: 4s;
-}
-.titles h1 {
-  font-size: 5rem;
-  font-style: italic;
-  font-weight: bolder;
+
+
+.line {
+  position: absolute;
+  width: 185px;
+  height: 0px;
+  left: 110px;
+  padding-left: 2.5rem;
+  top: 900px;
+  border: 2px solid #000000;
+  transform: rotate(0.31deg);
 }
 
-.titles h3 {
-  font-size: 1.5rem;
-  color: #e62e37;
+.line-2 {
+  position: absolute;
+  width: 185px;
+  height: 0px;
+  left: 110px;
+  padding-left: 2.5rem;
+  top: 1320px;
+  border: 2px solid #000000;
+  transform: rotate(0.31deg);
 }
 
-.titles button {
-  border-radius: 2rem;
-  outline: none;
-  border: none;
-  width: 17rem;
-  height: 5rem;
-  background-color: #e62e37;
-
-  font-size: 2rem;
-}
-.first-content img {
-  border-radius: 100%;
-
-  width: 591px;
-  height: 599px;
+.line-3 {
+  position: absolute;
+  width: 185px;
+  height: 0px;
+  left: 110px;
+  padding-left: 2.5rem;
+  top: 1110px;
+  border: 2px solid #000000;
+  transform: rotate(0.31deg);
 }
 
-.second-content {
+.third-content {
+  font-family: 'Cabin Sketch';
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #f4e9ce;
   padding: 2rem;
+  padding-bottom: 10px;
 
-  background-color: #e62e37;
-  font-family: system-ui;
 }
+.third-content img {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 1890px;
+  background: #E62E37;
+  border-radius: 50%;
 
-.second-content h1 {
-  font-size: 2rem;
-  font-weight: bolder;
-  padding: 2.5rem;
-}
-
-.products-view {
-  display: flex;
-  flex-direction: column;
-}
-
-.products-view h3 {
-  padding: 1.25rem;
-  font-size: 1.5rem;
-}
-
-.products-options {
-  padding: 1.25rem;
-}
-
-.thirty-content {
-  font-family: system-ui;
-  display: flex;
-
-  align-items: flex-start;
-  padding: 3rem;
-}
-.thirty-content img {
-  height: 24rem;
 }
 
 .about-us {
-  padding: 1.5rem;
-  width: 40vw;
+  padding: 0.75rem;
+  width: 80vw;
+  height: 80vh;
+  text-align: center;
 }
 .about-us h2 {
-  font-size: 4rem;
-  padding: 2rem 2rem 2rem 0;
+  font-size: 30px;
+  padding: 1rem 1rem 1rem 1rem;
+
 }
 .about-us span {
-  font-size: 1.5rem;
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  align-items: center;
 }
+
 .line-about-us {
   border-bottom: 2px gray;
 }
 
-@keyframes fadeInAboutUs {
-  from {
-    opacity: 0;
-    position: relative;
-    left:100%;
+.fourth-content { 
+  background-color: #00624b;
+}
+
+.snip1533 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #fbba05;
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  margin: px 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #f4e9ce;
+  border-radius: 5px;
+  border-top: 5px solid #e62e37;
+}
+
+.snip1533 *,
+.snip1533 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.snip1533 figcaption {
+  padding: 13% 10% 12%;
+}
+
+.snip1533 h3 {
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+.snip1533 h4 {
+  font-weight: 400;
+  margin: 0;
+  color: #e62e37;
+}
+
+.snip1533 blockquote {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  * {
+    box-sizing: border-box;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #00624b;
+  }
+  
+  .logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo-content img {
+    height: 5.25rem;
+  }
+  .text-logo {
+    font-family: "Satisfy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 35px;
+  
+    color: #fbba05;
+  }
+  .menu-content {
+    margin-right: 1.25rem;
+    font-family: "Margarine";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  
+    color: #fbba05;
+  }
+  
+  .menu-content span {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .menu-content span:hover {
+    background-color: #e62e37;
+  }
+  .first-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4e9ce;
+  }
+  .titles {
+    margin-left: 1.5rem;
+    width: 60vw;
+    height: 37.5rem;
+    font-family: system-ui;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      position: relative;
+      right:100%;
+      display:none;
+    }
+    to {
+      opacity: 1;
+      position: relative; 
+      right: 0;
+      display: block;
+    }
+  }
+  .animation-title {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+  }
+  .animation-title img {
     display:none;
   }
-  to {
-    opacity: 1;
-    position: relative; 
-    left: 0;
-    display: block;
+  .titles h1 {
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: bolder;
   }
-}
+  
+  .titles h3 {
+    font-size: 1.5rem;
+    color: #e62e37;
+  }
+  
+  .titles button {
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    width: 17rem;
+    height: 5rem;
+    background-color: #e62e37;
+  
+    font-size: 2rem;
+  }
+  .first-content img {
+    border-radius: 100%;
+  
+    width: 591px;
+    height: 599px;
+  }
+  
+  .second-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #00624B;
+    font-family: system-ui;
+  }
+  
+  .second-content h1 {
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 2.5rem;
+    
+  }
+  
+  .line {
+    position: absolute;
+    width: 185px;
+    height: 0px;
+    left: 89px;
+    top: 900px;
+    border: 3px solid #000000;
+    transform: rotate(0.31deg);
+  }
+  
+  .products-view {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .products-view h3 {
+    padding: 1.25rem;
+    font-size: 1.5rem;
+  }
+  
+  .products-options {
+    padding: 1.25rem;
+  }
+  
+  .third-content {
+    font-family: system-ui;
+    display: flex;
+  
+    align-items: flex-start;
+    padding: 3rem;
+  }
+  .third-content img {
+    height: 24rem;
+  }
+  
+  .about-us {
+    padding: 1.5rem;
+    width: 40vw;
+  }
+  .about-us h2 {
+    font-size: 4rem;
+    padding: 2rem 2rem 2rem 0;
+  }
+  .about-us span {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .line-about-us {
+    border-bottom: 2px gray;
+  }
+  
+  @keyframes fadeInAboutUs {
+    from {
+      opacity: 0;
+      position: relative;
+      left:100%;
+      display:none;
+    }
+    to {
+      opacity: 1;
+      position: relative; 
+      left: 0;
+      display: block;
+    }
+  }
+  
+  .animation-content-aboutus {
+    animation-name: fadeInAboutUs;
+    animation-duration: 4s;
+    transition-timing-function: cubic-bezier(0.03, 0.35, 0.8, 0.72);
+  }
+  
+  .my-image {
+    width: 500px;
+    height: 100px;
+    object-fit: contain;
+  }
 
-.animation-content-aboutus {
-  animation-name: fadeInAboutUs;
-  animation-duration: 4s;
-  transition-timing-function: cubic-bezier(0.03, 0.35, 0.8, 0.72);
 }
-
-.my-image {
-  width: 500px;
-  height: 100px;
-  object-fit: contain;
-}
-
